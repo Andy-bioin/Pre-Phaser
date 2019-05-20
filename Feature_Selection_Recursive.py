@@ -8,6 +8,7 @@ import sys
 prefix = sys.argv[1]
 k =  int(sys.argv[2])
 max_jobs = int(sys.argv[3])
+output_file = sys.argv[4]
 
 canonical_gene_list = list() 
 with open(prefix + '_genes.csv', 'r') as f:
@@ -56,4 +57,5 @@ while(len(gene_idx_best_so_far_list) < len(canonical_gene_list)):
 	#print(gene_name_best_so_far_list)
 	#print(accuracies_list)
 	#sys.stdout.flush()
-print(gene_name_best_so_far_list)
+with open(output_file, 'w') as filehandle:  
+    json.dump(gene_name_best_so_far_list, filehandle)
