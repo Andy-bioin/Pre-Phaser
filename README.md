@@ -43,6 +43,3 @@ Cell-Cycle Phase Detector for scRNA-seq
    python3 Precise_Evaluate_Selected_Features_On_Test.py data/microarray_leg_test data/SC_df_z_test 2 yes data/recursive_selection_precise_sample_output
 
    python3 Precise_Evaluate_Selected_Features_On_Test.py data/microarray_leg_test data/SC_df_z_test 2 no 
-
-
-## Data Format: To generate your own data files
